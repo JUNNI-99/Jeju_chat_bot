@@ -12,7 +12,7 @@ GOOGLE_API_KEY = st.text_input("API 키를 입력하세요:", type="password")
 @st.cache_data
 def load_data():
     # CSV 파일을 로딩 (여기에 파일 경로를 넣으세요)
-    return pd.read_csv('제주도_소비데이터.csv')
+    return pd.read_csv('JEJU_MCT_DATA_v2.csv')
 
 if GOOGLE_API_KEY:
     # Configure the API with the provided key
